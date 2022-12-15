@@ -27,11 +27,15 @@ public class PostCalls {
     @Test
     public void Token_BDD_Post_Call_API_FILE_TEST(){
 
-        RestAssured.baseURI="https://restful-booker.herokuapp.com";
-        given().log().all().contentType(ContentType.JSON)
+          RestAssured.baseURI="https://restful-booker.herokuapp.com";
+       String TokenID = given().log().all().contentType(ContentType.JSON)
                 .body(new File("C:\\Users\\s2743085\\OneDrive - The Bank of Nova Scotia\\Documents\\ProjectRunRajat\\src\\main\\java\\DataFiles\\credential.json"))
                 .when().log().all().post("/auth")
-                .then().log().all().assertThat().statusCode(200);
+                .then().extract().path("token");
+  //for getting token we usually take JsonPath().getString("")  we use this but there is short cut after
+  // then().Extract().path("JSON PATH")
+        System.out.println(TokenID);
+        Assert.assertNotNull(TokenID);
 
     }
 

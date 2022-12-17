@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Rest.Api.Authentication.AuthApi">
+      <class name="com.Rest.Api.Get.PostCalls">
         <methods>
-          <include name="Oauth1_API_Test"/>
+          <include name="Token_BDD_Post_Call_API_USER_TEST"/>
         </methods>
-      </class> <!-- com.Rest.Api.Authentication.AuthApi -->
+      </class> <!-- com.Rest.Api.Get.PostCalls -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

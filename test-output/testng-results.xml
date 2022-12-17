@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-11T12:33:42 GMT-05:00" name="Default suite" finished-at="2022-12-11T12:33:44 GMT-05:00" duration-ms="2678">
+  <suite started-at="2022-12-17T11:56:58 GMT-05:00" name="Default suite" finished-at="2022-12-17T11:57:05 GMT-05:00" duration-ms="7492">
     <groups>
     </groups>
-    <test started-at="2022-12-11T12:33:42 GMT-05:00" name="Default test" finished-at="2022-12-11T12:33:44 GMT-05:00" duration-ms="2678">
-      <class name="com.Rest.Api.Authentication.OAuth2APITest">
-        <test-method signature="CheckOAuth2Test()[pri:0, instance:com.Rest.Api.Authentication.OAuth2APITest@67080771]" started-at="2022-12-11T12:33:42 GMT-05:00" name="CheckOAuth2Test" finished-at="2022-12-11T12:33:44 GMT-05:00" duration-ms="2628" status="PASS">
+    <test started-at="2022-12-17T11:56:58 GMT-05:00" name="Default test" finished-at="2022-12-17T11:57:05 GMT-05:00" duration-ms="7492">
+      <class name="com.Rest.Api.Get.PostCalls">
+        <test-method signature="Token_BDD_Post_Call_API_FILE_TEST()[pri:0, instance:com.Rest.Api.Get.PostCalls@72cde7cc]" started-at="2022-12-17T11:56:58 GMT-05:00" name="Token_BDD_Post_Call_API_FILE_TEST" finished-at="2022-12-17T11:57:03 GMT-05:00" duration-ms="5644" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckOAuth2Test -->
-      </class> <!-- com.Rest.Api.Authentication.OAuth2APITest -->
+        </test-method> <!-- Token_BDD_Post_Call_API_FILE_TEST -->
+        <test-method signature="Token_BDD_Post_Call_API_TEST()[pri:0, instance:com.Rest.Api.Get.PostCalls@72cde7cc]" started-at="2022-12-17T11:57:03 GMT-05:00" name="Token_BDD_Post_Call_API_TEST" finished-at="2022-12-17T11:57:04 GMT-05:00" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Token_BDD_Post_Call_API_TEST -->
+        <test-method signature="Token_BDD_Post_Call_API_USER_TEST()[pri:0, instance:com.Rest.Api.Get.PostCalls@72cde7cc]" started-at="2022-12-17T11:57:04 GMT-05:00" name="Token_BDD_Post_Call_API_USER_TEST" finished-at="2022-12-17T11:57:05 GMT-05:00" duration-ms="1343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Token_BDD_Post_Call_API_USER_TEST -->
+      </class> <!-- com.Rest.Api.Get.PostCalls -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

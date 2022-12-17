@@ -1,4 +1,4 @@
-
+package com.Rest.Api.Get;
 import io.restassured.RestAssured;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
@@ -40,7 +40,7 @@ public class ResponseSpecificationBuilderTest {
     public void ResponseSpecTest_Bad_REQUEST_TEST(){
 
         RestAssured.baseURI="http://gorest.co.in";
-        given().header("Authorization","Bearer d5cc61a6a4db902af5cf78eacaab23b723a1453633dce8b7d26249e7c717001d").log().all()
+        given().header("Authorization","Bearer 7ed0d7f31bc21caed71d3b3ece46fa2dd5a94208ef6215d5eec2b913c71a85a4").log().all()
                 .when().log().all().get("/public/v2/uses?name=Kamala Pilla")
                 .then()
                 .assertThat().spec(res_Spec_400_AUTH_FAILED);

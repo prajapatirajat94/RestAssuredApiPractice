@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Rest.Api.Get.PostCalls">
+      <class name="com.Rest.Api.Schema.CheckSchemaTest">
         <methods>
-          <include name="Token_BDD_Post_Call_API_USER_TEST"/>
+          <include name="bookings_Schema_Test"/>
         </methods>
-      </class> <!-- com.Rest.Api.Get.PostCalls -->
+      </class> <!-- com.Rest.Api.Schema.CheckSchemaTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

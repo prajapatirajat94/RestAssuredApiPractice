@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Rest.Api.Schema.CheckSchemaTest">
+      <class name="com.Rest.Api.Post.PostApiWithPOJO">
         <methods>
-          <include name="bookings_Schema_Test"/>
+          <include name="createuser_With_Pojo_Test"/>
         </methods>
-      </class> <!-- com.Rest.Api.Schema.CheckSchemaTest -->
+      </class> <!-- com.Rest.Api.Post.PostApiWithPOJO -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

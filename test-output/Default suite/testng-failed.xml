@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Rest.Api.Post.PostApiWithPOJO">
+      <class name="com.Rest.Api.PUT.PUTAPITest">
         <methods>
-          <include name="createuser_With_Pojo_Test"/>
+          <include name="update_user_PUT_API_Test"/>
         </methods>
-      </class> <!-- com.Rest.Api.Post.PostApiWithPOJO -->
+      </class> <!-- com.Rest.Api.PUT.PUTAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

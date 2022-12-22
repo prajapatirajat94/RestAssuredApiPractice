@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-20T18:00:13 GMT-05:00" name="Default suite" finished-at="2022-12-20T18:00:18 GMT-05:00" duration-ms="5210">
+  <suite started-at="2022-12-22T11:29:29 GMT-05:00" name="Default suite" finished-at="2022-12-22T11:29:35 GMT-05:00" duration-ms="6464">
     <groups>
     </groups>
-    <test started-at="2022-12-20T18:00:13 GMT-05:00" name="Default test" finished-at="2022-12-20T18:00:18 GMT-05:00" duration-ms="5210">
-      <class name="com.Rest.Api.Post.PostApiWithPOJO">
-        <test-method signature="createuser_With_Pojo_Test()[pri:0, instance:com.Rest.Api.Post.PostApiWithPOJO@1cbb87f3]" started-at="2022-12-20T18:00:13 GMT-05:00" name="createuser_With_Pojo_Test" finished-at="2022-12-20T18:00:18 GMT-05:00" duration-ms="5148" status="PASS">
+    <test started-at="2022-12-22T11:29:29 GMT-05:00" name="Default test" finished-at="2022-12-22T11:29:35 GMT-05:00" duration-ms="6464">
+      <class name="com.Rest.Api.PUT.PUTAPITest">
+        <test-method signature="update_user_PUT_API_Test()[pri:0, instance:com.Rest.Api.PUT.PUTAPITest@1cbb87f3]" started-at="2022-12-22T11:29:29 GMT-05:00" name="update_user_PUT_API_Test" finished-at="2022-12-22T11:29:35 GMT-05:00" duration-ms="6401" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createuser_With_Pojo_Test -->
-      </class> <!-- com.Rest.Api.Post.PostApiWithPOJO -->
+        </test-method> <!-- update_user_PUT_API_Test -->
+      </class> <!-- com.Rest.Api.PUT.PUTAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

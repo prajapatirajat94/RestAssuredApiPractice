@@ -5,6 +5,7 @@ import static org.hamcrest.Matchers.*;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import io.restassured.authentication.FormAuthConfig;
 
 
 
@@ -25,8 +26,72 @@ public void BasicAuthApi_Test() {
 	.then().log().all()
 	.assertThat()
 	.statusCode(200);
-	
+//Type of authentication available 	
+//basic
+//premetive :- some time only basic auth does not work at that time use it with preemetive
+//digest
+//form
+//Oauth1
+//Oauth2	
+		
 }
+
+
+//Basic auth with Premeetive
+@Test
+public void BasicAuth_With_PREEMETIVE_Api_Test() {
+	given().log().all()
+	.auth()
+	.preemptive()
+	.basic("admin","admin" )
+	.when().log().all()
+	.get("https://the-internet.herokuapp.com/basic_auth")
+	.then().log().all()
+	.assertThat()
+	.statusCode(200);
+
+}
+
+
+
+// Digest auth
+@Test
+public void BasicAuth_DIGEST_Api_Test() {
+	//here we are sending username and password with hashing at that time we use 
+	//digest auth :- its more secured
+	given().log().all()
+	.auth()
+	.digest("admin","admin" )
+	.when().log().all()
+	.get("https://the-internet.herokuapp.com/basic_auth")
+	.then().log().all()
+	.assertThat()
+	.statusCode(200);
+
+}
+
+
+//Form auth
+@Test
+public void BasicAuth_FORM_Api_Test() {
+	//WHEN YOU WANT TO ADD USERNAME AND PASSWORD FROM THE HTML FORMS 
+	// it will take username and password from forms and send it to server 
+	given().log().all()
+	.auth()
+	.form("admin", "admin",new FormAuthConfig("https://classic.freecrm.com/system/authenticate.cfm","username","password"))
+	.when().log().all()
+	.get("https://classic.freecrm.com/system/authenticate.cfm")
+	.then().log().all()
+	.assertThat()
+	.statusCode(200);
+
+}
+
+
+
+
+
+
 
 
 //	OAuth 2.0

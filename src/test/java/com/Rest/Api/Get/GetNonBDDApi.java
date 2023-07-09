@@ -2,6 +2,10 @@ package com.Rest.Api.Get;
 
 
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,7 +24,7 @@ public class GetNonBDDApi {
 	
 	
 @Test
-public void getUser_non_Bdd_Test() {
+public void getUser_non_Bdd_Test() throws FileNotFoundException {
 	
 //prepare the request
 //hit the API
@@ -34,6 +38,18 @@ public void getUser_non_Bdd_Test() {
 	System.out.println(response.statusCode());
 	System.out.println(response.prettyPrint());
 	System.out.println(response.header("Server"));
+	
+	/**
+	 * below method is to write json response to file
+	 */
+	try (FileWriter file = new FileWriter("employees.json")) {
+        //We can write any JSONArray or JSONResponse instance to the file
+        file.write(response.prettyPrint()); 
+        file.flush();
+
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
 	
 }
 	

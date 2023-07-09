@@ -1,0 +1,72 @@
+[
+    {
+        "id": 3534121,
+        "name": "Deeptiman Joshi VM",
+        "email": "joshi_vm_deeptiman@koepp.example",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3534119,
+        "name": "Preity Dwivedi",
+        "email": "preity_dwivedi@nader.test",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3534117,
+        "name": "Krishnadas Varrier",
+        "email": "varrier_krishnadas@sauer-hansen.test",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3534116,
+        "name": "Ashlesh Butt",
+        "email": "ashlesh_butt@wolff.test",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3534115,
+        "name": "Miss Bhaumik Mahajan",
+        "email": "mahajan_miss_bhaumik@gottlieb.example",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3534114,
+        "name": "Aasa Johar",
+        "email": "johar_aasa@haley.example",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3534113,
+        "name": "Marut Patel",
+        "email": "patel_marut@cummings-ohara.test",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3534112,
+        "name": "Ananda Sinha",
+        "email": "ananda_sinha@block-pacocha.example",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3534111,
+        "name": "Hamsini Desai",
+        "email": "desai_hamsini@cummings.example",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3534110,
+        "name": "Naveen Gandhi",
+        "email": "naveen_gandhi@rempel.test",
+        "gender": "male",
+        "status": "inactive"
+    }
+]
